@@ -1,0 +1,1588 @@
+# Day one on Python course
+# print('I am a big fan of you melika')
+# print(type('ali'))
+# print(type(180))
+# print(5+6)
+# print(10*2/4)
+# x=5
+# print(x)
+# y=10
+# print(y)
+# print(x+y*x)
+# name='ali'
+# print(name)
+ 
+
+# Day two on Pythone course///j8
+# x = int(4)
+# y = int(2.8)
+# z = int("3")
+# d=float(1)
+# m=float('5')
+# print(type(z))
+# print(z)
+# print(type(y))
+# print(y) 
+# print(type(d))
+# print(d)
+# print(type(m))
+# print(m)
+
+# j9
+# name='amir'
+# family='Amiri'
+# my_name="My name is:"amir""    wrong
+# my_name='My name is:"amir" '   right
+# my_name="My Name is:\"Amir\""  right
+# x='Im Amir\nim from iran'      newline
+
+# j10
+# x='probe'
+# print(x[2]) 
+# print('probe'[4])
+# y='hello,world'
+# print(y[2:5])
+# print(y[-5:-2])
+# print(y[:5])
+# print(y[2:])
+
+# j11
+# a='Hello'
+# b=' World'
+# d=' baby' 
+# c=a +" "+ b+" "+ d
+# print(c)
+# age=30
+# txt="My age is:"+age   wrong
+# txt="My age is:"+str(age)  right
+# c=f"My age is:{age}"
+# print(c)
+# me=f'my name is {a} and my last name is {b} and im a {d}'
+# print(me)
+# me=f'{a}{b}{d}'
+# print(me)
+
+# j12  Method
+# txt="im from codeyad"
+# txt="Im from codeyad {} {}"   for format Method
+# print(txt.format("amir","amiry"))  For conecting to string
+# print(txt.capitalize())   First word will be big
+# print(txt.casefold())     All words getting small
+# print(txt.count("m"))     Count the string that i want in my string
+# print(txt.find("f"))      Find the word sort by index in my string
+# print(txt.strip())        Remove left and right spaces
+# print(txt.title())        First word in Each sentence will be big
+# print(txt.upper())        All words getting big
+# print(txt.lower())        All words getting small
+# print(len(txt))           For counting string numbers  
+
+# j13  Booleans
+# print(bool("codeyad"))
+# print(bool(30))
+# print(bool(False))
+# print(bool(None))
+# x=1==5
+# print(x)
+# print(type(x))
+# old_pass="12345"
+# new_pass1="1234567"
+# new_pass2="1234567"
+# print(new_pass1==new_pass2)
+# x=5
+# y=8
+# print(x!=y)
+
+
+# j14   review
+# number=input("Select a num between 1 to 9: ")
+# print("MY number is:",number)
+# number=int(number)
+# result=int((((((number * 2 + 8) + (number)) - 2) / 3)-number)*4)
+# print("Your answer is :",result)
+
+# sentence="I love you Melika\n"
+# result=sentence * 10000
+# print(result)
+
+# j15    review 2
+# number=input("Select a num between 1 to 9: ")
+# print("MY number is:",number)
+# number=int(number)
+# num=number
+# num *=2
+# num +=8
+# num +=number
+# num -=2
+# num /=3
+# num -=number
+# num *=4
+# print(num)
+
+# j16 & 17
+# list=["Apple","Cherry","Banana"]
+# new_list=["Aplle",12,True]
+# print(list[2])
+# print(len(list))
+# print(type(list))
+
+# j18   lists
+# list=["Apple","Cherry","Banana"]
+# print(list[2:3])
+# print(list[1:])
+# print(list[:3])
+# print(list[-1])
+# print(list[-3:-1])
+# -----------------------------------
+# j19   chenge item in lists
+# thelist=["aplle","banana","cherry","tomato"]
+# thelist[2]="cucomber"
+# thelist[0:2]=["orange","onion"]
+# print(thelist)  
+
+# thelist[1]=["Orenge","onion"]    wrong
+# thelist[1:2]=["Orenge","onion"]  right
+# print(thelist)
+
+# thelist[0:2]=["watermelon"]
+# print(thelist)
+
+# thelist.insert(2,"shalil")    insert to list
+# print(thelist)
+# -----------------------------------
+# j20  add item to list
+# thelist=["aplle","banana","cherry","tomato"]
+# thelist2=("ali","reza")
+# thelist.append("shalil")
+# print(thelist)
+
+# thelist.insert(2,"shalil")    insert to list
+# print(thelist)
+
+# thelist.extend(thelist2)
+# print(thelist)
+# -----------------------------------
+# j21   remove list items
+# thelist=["aplle","banana","cherry","tomato"]
+# thelist.remove("aplle")
+# print(thelist)
+
+# thelist.pop(2)
+# print(thelist)
+
+# del thelist[1]
+# print(thelist)
+
+# del thelist     delete all items in list
+# print(thelist)
+
+# thelist.clear()   clear the list
+# print(thelist)
+# -----------------------------------
+# j22 sort & copy the list items
+# thelist=["aplle","banana","tomato","cherry"]
+# thelist.sort()
+# print(thelist)
+
+# thelist=[100,25,65,120,26]
+# thelist.sort()
+# print(thelist)
+
+# thelist.sort(reverse=True)
+# print(thelist)
+
+# thelist.reverse()
+# print(thelist)
+
+# def myfunc(n):          Sort the list based on how close the number is to 50:
+#   return abs(n - 50)
+
+# thislist2= [100, 50, 65, 82, 23]
+# thislist.sort(key = myfunc)
+# print(thislist)
+
+# newlist=thelist.copy()
+# print(newlist)
+
+# newlist=list(thelist)
+# print(newlist)
+
+# thelist3=thelist + thislist2
+# print(thelist3)
+# -----------------------------------
+# j24  Tuples
+# thistuple=("Banana","aplle","Tomato")
+# thattuple=(1,2,3,4)
+# print(thistuple)
+# print(type(thistuple))
+# print(thistuple[2])
+
+# thistuple[2]="Onion"    wrong 
+
+# newtuple=list(thistuple)   change tuple to list
+# newtuple[1]='orenge'     right
+# print(newtuple)
+
+# newtuple2=tuple(newtuple)   change list to tuple
+# print(type(newtuple2))
+
+# resultuple=thistuple + thattuple   join 2 tuple
+# print(resultuple)
+
+# tuple=('reza',)    For printing a tuple with one item
+# print(type(tuple))
+# -----------------------------------
+# j25   sets
+# thisset = {"apple", "banana", "cherry"}
+# print(thisset)
+
+# thisset = {"apple", "banana", "cherry", True, 1, 2}
+# print(thisset)
+# thisset = {"apple", "banana", "cherry", False, True, 0}
+# print(thisset)
+# thisset = {"apple", "banana", "cherry"}
+# print(len(thisset))
+
+# set1 = {"apple", "banana", "cherry"}
+# set2 = {1, 5, 7, 9, 3}
+# set3 = {True, False, False}
+# print(set1)
+# print(set2)
+# print(set3)
+
+# set1 = {"abc", 34, True, 40, "male"}
+# print(set1)
+# -----------------------------------
+# j26  access to sets
+# thisset = {"apple", "banana", "cherry"}
+# thatset={"Bmv","mercedes","Peraid"}
+# print("banana" in thisset)
+# print("banana" not in thisset)   acsees
+
+# thisset.add("orenge")   add item to set
+# print(thisset)
+
+# tropical = {"pineapple", "mango", "papaya"}  To add items from another set into the current set, use the update() method.  
+# thisset.update(tropical)
+# print(thisset)
+
+# mylist = ["kiwi", "orange"]  The object in the update() method does not have to be a set, it can be any iterable object (tuples, lists, dictionaries etc.).
+# thisset.update(mylist)
+# print(thisset)
+
+# thisset.remove("banana")   remove set item
+# print(thisset)
+
+# thisset.discard("banana")
+# print(thisset)
+
+# x = thisset.pop()
+# print(x)
+# print(thisset)
+
+# thisset.clear()
+# print(thisset)
+
+# del thisset
+# print(thisset)
+# -----------------------------------
+# j27  sets method & join
+# thisset = {"apple", "banana", "cherry"}
+# thatset={"Bmv","mercedes","Peraid","apple"}
+
+# resultset=thisset.union(thatset)   join 2 sets
+# print(resultset)
+
+# thisset.update(thatset)
+# print(thisset)
+
+# thisset.intersection_update(thatset)   Eshterak giri mikone
+# resultset= thisset & thatset  
+# print(thisset)
+
+# thisset.symmetric_difference_update(thatset)   oni ke moshtarake ro nemiare
+# print(thisset)
+# -----------------------------------
+# j28  Dictionaries
+# thisdict= {
+#     "carname":"BMW",
+#     "carcolor":"Black",
+#     "carmodel": 1194
+# }
+# print(thisdict)
+# print(type(thisdict))
+# print(thisdict["carname"]) 
+# print(len(thisdict))
+
+# thisdict={
+#     "name":"ali",
+#     "age":20,
+#     "friends":['mohammad','reza'],
+#     "happy":True
+# }
+# print(thisdict)
+# -----------------------------------
+# j29  access to dict
+# thisdict = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+# x=thisdict["brand"]
+# print(x)
+
+# x=thisdict.get("brand")
+# print(x)
+
+# x=thisdict.keys()     will return a list of all the keys in the dictionary.
+# print(x)
+
+# x=thisdict.values()     will return a list of all the values in the dictionary.
+# print(x) 
+
+# x=thisdict.items()
+# print(x)
+
+# x="brand" in thisdict
+# print(x)
+# -----------------------------------
+# j30  change & add & delete item
+# thisdict = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+# thisdict["brand"]="BmW"
+# print(thisdict)
+
+# thisdict.update({"model":"E60"})
+# print(thisdict)
+
+# thisdict["color"]='red'
+# print(thisdict)
+
+# thisdict.update({"karkard":12000})
+# print(thisdict)
+# -----------------------------------
+# j31
+# fruit = [
+#     {
+#         'name': 'apple',
+#         'price': 1500
+#     },
+#     {
+#         'name': 'banana',
+#         'price': 1000
+#     },
+#     {
+#         'name': 'orange',
+#         'price': 1200
+#     }
+# ]
+
+
+# print(fruit)
+# print('------------------')
+
+
+# for item in fruit:
+#     if item['price'] == 1000:
+#         item['price'] = 1100
+
+# fruit[:] = [item for item in fruit if not (item['name'] == 'apple' and item['price'] == 1500)]
+
+# print(fruit)
+
+
+
+
+# thisdict = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+# thisdict.pop("model")
+# print(thisdict)
+
+# thisdict.popitem()    method removes the last inserted item
+# print(thisdict)
+
+# thisdict.clear()
+# print(thisdict)
+
+# del thisdict["model"]
+# print(thisdict)
+
+# del thisdict
+# print(thisdict) 
+# -----------------------------------
+# j32  copy&nested dict
+# thisdict = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+# thisdict2=thisdict.copy()
+# thisdict2["color"]='red'
+# print(thisdict2)
+# print(thisdict)
+
+# thisdict2=dict(thisdict)
+# print(thisdict2)
+
+# myfamily={
+#         'child1':{
+#         'name':'ali',
+#         'age':25},
+#                     'child2':{
+#                     'name':'reza',
+#                     'age':25,}
+#           }
+# print(myfamily['child1'])
+
+# child2=myfamily['child2']
+# print(child2['name'])
+# -----------------------------------
+# j33  condithens1
+# if False:
+#     print("hello")    this are for if
+#     print("Melika")
+
+# print("bY")   this not
+
+# a=12
+# b=14
+# if a<b:
+#     print("A less than B")
+# -----------------------------------
+# j34  condithens2
+# a=15
+# b=14
+# if a<b:
+#     print("A less than B")
+# elif a>b:
+#     print("B less than A")
+
+# a=15
+# b=14
+# if a<b:
+#     print("B bigger than A")
+# else:
+#     print("A bigger than b")
+# -----------------------------------
+# j35  conditiens3
+# a=15
+# b=14
+# if a<b: print("B bigger than A")
+# print("B bigger than A") if a>b else print("OK")
+
+# a=12
+# b=20
+# c=12
+# if a>b and c==a:   Both should be correct to return true
+#     print("right")
+# elif a<b:
+#     print("Wrong")
+
+# if a>b or c==a:    if one of conditions was correct it return right
+#     print("right")
+# elif a<b:
+#     print("Wrong")
+
+# if a==b:    for passing this and doing nothing
+#     pass
+
+
+
+# purchase_amount = float(input("Enter purchase amount in Tomans: "))
+
+# if purchase_amount > 50000:
+#     discount = 0.20
+# elif 20000 <= purchase_amount <= 50000:
+#     discount = 0.10
+# else:
+#     discount = 0.0
+
+# discount_amount = purchase_amount * discount
+# final_amount = purchase_amount - discount_amount
+
+# print(f"Purchase amount: {purchase_amount:.2f} Tomans")
+# print(f"Discount percentage: {discount * 100:.0f}%")
+# print(f"Discount amount: {discount_amount:.2f} Tomans")
+# print(f"Final amount: {final_amount:.2f} Tomans")
+# -----------------------------------
+# j36 loops1
+# while True:
+#     print("I Love you Melika\n")
+
+# i=1
+# while i<10:
+#     print(i)
+#     i +=1
+# -----------------------------------
+# j37 Loops2
+# x=0                 break
+# while x<100:
+#     x +=1
+#     if x == 10:
+#         break
+#     print(x)
+
+# x=0                 continue          
+# while x<100:
+#     x +=1
+#     if x == 10:
+#         continue
+#     print(x)
+
+# x=0
+# while x>10:
+#     print(x)
+#     x +=1
+# else:
+#     print("Ok")
+# ------------------------------------
+# j38 & 39 Tamrin    Login.Py
+# saved_pass='1234'
+# max_attemps=3
+# attemps=0
+# while max_attemps>attemps:
+#   Entered_pass=input('Enter youe pass: ')
+#   attemps+=1
+#   if Entered_pass==saved_pass:
+#     print("You are in")
+#     break
+#   else:
+#       remaining=max_attemps-attemps
+#       if remaining>0:
+#         print(f'Youe wrong!Enterd again:\nyou have {remaining} choice ')
+#       else:
+#          print("You are dead")
+
+# ----------------------------------------
+# j40
+# users={
+#     'ali':'1234',
+#     'hasan':'2345',
+#     'ali':6789
+# }
+# enterd_username=input("Enter your username: ")
+# enterd_pass=input("Enter your pass: ")
+# if enterd_username in users:
+#     print("Yes you are with us")
+# else:
+#     print("Yoe are not")
+
+# ----------------------------------------
+#j41
+# users={
+#     'ali':'1234',
+#     'hasan':'2345',
+#     'reza':'6789'
+# }
+# enterd_username=input("Enter your username: ").strip()
+# if enterd_username in users:
+#       enterd_pass=input("Enter your pass: ").strip()
+#       if enterd_pass == users[enterd_username]:
+#         print("Welcome bro")
+#       else:
+#         print("you are not in our group")
+#         print("Join us man")
+# else:
+#     print("you are not in our group")
+#     print("Join us man")
+# -------------------------------------------
+# j42
+# users={
+#     'ali':'1234',
+#     'hasan':'2345',
+#     'reza':'6789'
+# }
+# entered_username=input("Enter your username: ").strip()
+# entered_pass=input("Enter your pass: ").strip()
+
+# while entered_username not in users or users[entered_username]!=entered_pass:
+#     print("Wrong: ")
+#     entered_username=input("enter again username : ").strip()
+#     entered_pass=input("enter again your pass : ").strip()
+# print("You loged in")
+# ----------------------------------------------------------------------
+# j43 for loop
+# cars=["Bmw",'mustang','bemz']
+# for x in cars:
+#     print(x)
+
+# name="Zahra "
+# for x in name:        #for x in Zahra
+#     print(x)
+# -------------------------------------------
+# j44 to 48
+# fruits = ["apple", "banana", "cherry"]
+# for x in fruits:
+#   print(x)
+#   if x == "banana":
+#     break
+
+# fruits = ["apple", "banana", "cherry"]
+# for x in fruits:
+#   if x == "banana":
+#     continue
+#   print(x)
+
+# for x in range(20):
+#     print(x)
+
+# for x in range(10,20):
+#     print(x)
+
+# for x in range(2, 30, 3):
+#   print(x)
+
+# for x in range(6):
+#   print(x)
+# else:
+#   print("Finally finished!")
+
+# adj = ["red", "big", "tasty"]
+# fruits = ["apple", "banana", "cherry"]
+
+# for x in adj:
+#   for y in fruits:
+#     print(x, y)
+
+# for x in [0, 1, 2]:
+#   pass
+# ------------------------------------------
+# j49     Tamrin
+# cars = ["Bmv","Mercedes","Mazerati","Ferari","Dodge"]
+# car = []
+# for x in cars:
+#     if x[0] == "B"      #first word is b
+#     if x[-1] == "i":    #last word is i
+#         car.append(x)
+#         print(car)
+# -----------------------------------------------------
+# j50     Tamrin2
+# person1=['ali','reza','hamid','mamad','javad']
+# person2=['armin','taha','hamid','ali','omid','sahand','javad']
+# result = []
+# for x in person1:
+#     for y in person2:
+#         if x == y:
+#             result.append(x)
+#             print(result)
+# ------------------------------------------------
+# j51     Tamrin3
+# entered_name = input("Enter your fullname : ").strip()
+# entered_name = entered_name.lower()    #For making all words to little words
+# entered_name=entered_name.replace(" ","")    #For deleting middle apaces
+# b = []
+# for x in entered_name:
+#     if x not in b:
+#         print(f"Your name has: {entered_name.count(x)} {x}")
+#         b.append(x)
+
+# f="amir amiri"
+# print(f.replace(" ","m"))
+# ------------------------------------------------------
+# j52      some exercise
+# name=input("Enter a name : ")
+# for x in range(0, len(name), 2):
+#     print(f"{name[x]}")
+
+
+
+# list = input("Give a list of number : ")
+# list= [int(num) for num in list.split()]
+# print("List of numbers:", list)
+
+# for x in list:
+#     if (x % 5) ==0:
+#         print("divisible by 5 : ",x)
+    
+
+
+# x=0
+# while x<11:
+#     print(x)
+#     x +=1
+
+
+# enter=int(input("Enter a num : "))
+# row = enter
+# for i in range(1, enter + 1, 1):
+#     for j in range(1, i + 1):
+#         print(j, end=' ')
+#     print("")
+
+
+# s = 0
+# n = int(input("Enter number "))
+# for i in range(1, n + 1, 1):
+#     s += i
+# print("\n")
+# print("Sum is: ", s)
+# -------------------------------------------------------
+# j53   function1    Good j
+# def function():
+#     print("HEllo world")
+# function()
+# function()
+# function()
+# -------------------------------------------------------
+# j54   function2
+# def func1(name):
+#     print(f"hello {name}")
+# func1("ali")
+
+# def func1(name , lastname):
+#     print(f"hello {name} {lastname}")
+# func1("ali","ahmadi")
+
+# def sum(a,b):
+#     print(a+b)
+# sum(2,40)
+# -------------------------------------------------------
+# j55     function3
+# def my_function(fname, lname):
+#   print(fname + " " + lname)
+
+# my_function("Emil","Emily")
+# ----------------------------------------------
+# j56    Tamrin
+# ----------------------------------------------
+# j57     func4
+# def hello(name1 , name2):
+#     print(f"Hello {name1}")
+#     print(f"Hello {name2}")
+# hello("ali","Akbar")
+
+# def hello(*args):
+#     for name in args:
+#         print(f"hello {name}")
+
+# hello("amir","ali","hasan")
+
+# def hello(firstname,lname,*args):
+#     print(firstname)
+#     print(lname)
+#     print(args)
+
+# hello("ali","mohammadi","ali","milad")
+# ---------------------------------------------------
+# j58     kewargs
+# def hello(fname,lname):
+#     print(fname,lname)
+
+# hello(lname='amiri',fname='amir')
+
+# def hello(fname,lname,*args,**kwargs):       #try any parametr that we want in callin function 
+#     print(fname)
+#     print(lname)
+#     print(args)
+#     print(kwargs)        #print(kwargs['age']) 
+
+
+# hello("amir","amiry","raza","hamid",age=23,city="tehran",team='codeyad')
+# -------------------------------------------------------------------------
+# j59   Default Parameter Value
+# def me(name="amir"):
+#     print(f"my name is {name}")
+
+# me()
+
+# def me(lname,fname="amir"):
+#     print(f"my name is {fname} {lname}")
+
+# me("amiri")
+# -------------------------------------
+# j60
+# def my_function(food):
+#   for x in food:
+#     print(f"hello {x}")
+
+# fruits = ["apple", "banana", "cherry"]
+
+# my_function(fruits)
+# ---------------------------------------------
+# j61
+# def my_function(x):
+#     return [5 * x, 2 - x, 1 + x]
+
+# print(my_function(3))
+# print(my_function(5))
+# print(my_function(9))
+
+# ----------------------------------------------
+# j62
+# def myfunction():       #function definitions cannot be empty, but if you for some reason have a function definition with no content, put in the pass statement to avoid getting an error.
+#   pass
+
+# username=input("Enter your username : ")
+# def validation(userame):
+#     if len(username) > 8:
+#         return False
+#     else:
+#         return True
+
+# if validation(username):
+#     print("Youe username is ok")
+# else:
+#     print("Wrong")
+# -----------------------------------------------------
+# j63     Train to 65
+# def test():
+#     user_input = input("Enter a string: ")
+#     lower_count = 0
+#     upper_count = 0
+    
+#     # Analyze each character in the string
+#     for char in user_input:
+#         if char.islower():
+#             lower_count += 1
+#         elif char.isupper():
+#             upper_count += 1
+#         else:
+#             pass
+    
+#     # Print results
+#     print(f"Lowercase letters: {lower_count}")
+#     print(f"Uppercase letters: {upper_count}")
+#     print(f"Original string: {user_input}")
+
+# test()
+
+
+# def test():
+#     for i in range(5):  # Loop 5 times to get 5 names
+#         user_input = input(f"Enter name {i+1}: ")  # Prompt for name with iteration number
+#         lower_count = 0
+#         upper_count = 0
+        
+#         # Analyze each character in the string
+#         for char in user_input:
+#             if char.islower():
+#                 lower_count += 1
+#             elif char.isupper():
+#                 upper_count += 1
+#             else:
+#                 pass
+        
+#         # Print results for this name
+#         print(f"Name {i+1}: {user_input}")
+#         print(f"Lowercase letters: {lower_count}")
+#         print(f"Uppercase letters: {upper_count}")
+#         print()  # Empty line for readability
+
+# test()
+# ------------------------------------------------------------
+# j64
+# def num():
+#     for i in range(5):  # Loop 5 times
+#         try:
+#             entered_num = int(input(f"Please enter number {i+1}: "))
+#             print(f"You entered: {entered_num}")
+            
+#             if entered_num % 2 == 0: 
+#                 print("Your num is zoj (even)")
+#             else:
+#                 print("Your num is fard (odd)")
+#             print()
+#         except ValueError:
+#             print("Error: Please enter a valid integer.")
+#             print()
+
+# num()
+# -------------------------------------------------------------------
+# j65       mobadel tarikh
+# def mobadel():
+#     for i in range(5):
+#         try:
+#             x = int(input(f"Enter the year of your birth in Shamsi for person {i+1}: "))
+#             if x < 1300 or x > 1404:
+#                 print("Error: Year must be between 1300 and 1404.")
+#                 print()
+#                 continue
+#             y = int(input(f"Enter the month of your birth for person {i+1}: "))
+#             if y < 1 or y > 12:
+#                 print("Error: Month must be between 1 and 12!")
+#                 print()
+#                 continue
+#             z = int(input(f"Enter the day of your birth for person {i+1}: "))
+#             if y <= 6 and (z < 1 or z > 31):
+#                 print("Error: Day must be between 1 and 31 for months 1-6!")
+#                 print()
+#                 continue
+#             elif y >= 7 and y <= 11 and (z < 1 or z > 30):
+#                 print("Error: Day must be between 1 and 30 for months 7-11!")
+#                 print()
+#                 continue
+#             elif y == 12 and (z < 1 or z > 29):
+#                 print("Error: Day must be between 1 and 29 for Esfand!")
+#                 print()
+#                 continue
+#             gregorian_year = x + 621
+#             gregorian_month = y
+#             gregorian_day = z
+#             if y <= 6:
+#                 gregorian_day += 11 if z <= 20 else 10
+#             else:
+#                 gregorian_day += 12 if z <= 19 else 11
+#             if gregorian_day > 31:
+#                 gregorian_day -= 31
+#                 gregorian_month += 1
+#             if gregorian_month > 12:
+#                 gregorian_month -= 12
+#                 gregorian_year += 1
+#             print(f"Your Shamsi birth date: {x}/{y:02d}/{z:02d}")
+#             print(f"Your Gregorian birth date: {gregorian_year}/{gregorian_month:02d}/{gregorian_day:02d}")
+#             print()
+#         except ValueError:
+#             print("Error: Please enter valid numbers for year, month, and day.")
+#             print()
+
+# mobadel()
+
+
+
+# day = int(input("Enter day :"))
+# month = int(input("Enter month :"))
+# year = int(input("Enter year :"))
+
+# def mobadel(day,month,year):
+#     if month > 10 or day > 10 and month == 10:
+#         birthday=year + 622
+#     else:
+#         birthday = year + 621
+#         print(f"Your year of birth : {birthday}")
+
+# mobadel(day , month , year)
+# --------------------------------------------------------------------
+# j67   lambda
+# def mufunc(a):
+#     return a+10
+
+# myfunc2=mufunc
+
+# x=lambda a : a + 10
+# y=lambda a , b : a + b
+# print(y(12,25))
+# ------------------------------------------------
+# j68    lambda2
+# def func(n):
+#     def func2(a):
+#         return a * n
+    
+#     return func2
+
+# mydoubler = func(2)
+# mytripler = func(3)
+
+# print(mytripler(4))
+
+# def func(n):
+#     return lambda a : a * n
+
+# mydoubler = func(2)
+# mytripler = func(3)
+
+# print(mytripler(4))
+# ---------------------------------------------------
+# j69    map function 
+# my_list=[1,3,6,7,8]
+# def func(number):
+#     return number * 2
+
+# x = map(func , my_list)
+
+# print(list(x))
+
+
+# my_list=[1,3,6,7,8]
+
+# x = map(lambda a : a*2 , my_list)
+
+# print(list(x))
+
+# my_list=[1,3,6,7,8]
+# my_list2=[5,9,6,2,4]
+
+# x = list(map(lambda a , b : a * b, my_list , my_list2))
+
+# print(x)
+# ----------------------------------------------------------------
+# j72   OOP
+# class MyClass():
+#     x = 5        #x is a property
+#     y = 10
+
+# p1 = MyClass()
+# p2 = MyClass()
+
+# print(p1.x)
+# print(p2.y)
+# ------------------------------------------------------
+# j73   class(init)
+# class MyClass():
+#     def __init__(self):      #self namayande tamam on object has
+#         self.name = "amir"
+#         self.lastname = "amiri"
+
+# p1 = MyClass()
+# p2 = MyClass()
+
+# print(p1.name)
+# print(p2.lastname)
+# print(p1.lastname)
+
+
+
+# class MyClass():
+#     def __init__(self , name , lname):      #self namayande tamam on object has
+#         self.Myname = name
+#         self.lname = lname
+
+# p1 = MyClass("ali" , "amiri")
+# p2 = MyClass("amir" , "hasani")
+
+# print(p2.Myname)
+# print(p2.lname)
+# -----------------------------------------------------------------
+# j74    init(2)
+# class Person():
+#     def __init__(self,name,lname,age):
+#         self.myname=name
+#         self.mylname=lname
+#         self.myage=age
+
+# p1 = Person("ali","hamidi",12)
+# p2 = Person("reza","faraji",25)
+
+# print(p1.myname,p1.mylname,p1.myage)
+# print(p2.myname,p2.mylname,p2.myage)
+
+
+# class Person():
+#     def __init__(self):
+#         print("Hello from init")
+
+# p1 = Person()
+
+# print(p1)
+# -------------------------------------------------
+# j75    method in oop
+# class Person():
+#     def __init__(self,name,lname):
+#         self.myname = name
+#         self.mylname = lname
+
+#     def fullname(self):
+#         print("Hello from fulname")
+
+
+# p1 = Person("amir","amiri")
+# p1.fullname()          #method
+
+
+#MEthod : is a function that defenation in a class and we can accesses to that with an object
+
+# class Person():
+#     def __init__(self,name,lname):
+#         self.myname = name
+#         self.mylname = lname
+
+#     def fullname(self):
+#         print(f"Hello im {self.myname} {self.mylname}")
+
+# p1 = Person("Milad","azizi")
+# p1.fullname()
+# ------------------------------------------------------------------
+# j76
+# class Person():
+#     def __init__(self,name,lname,age):
+#         self.myname = name
+#         self.mylname= lname
+#         self.myage = age
+
+#     def fullname(self):
+#         print(f"My name is {self.myname} {self.mylname} in age {self.myage}")
+
+# p1 = Person("ali","rezaii",22)
+# print(p1.myname,p1.mylname,p1.myage)
+# p1.fullname()
+
+# p1.myname="reza"
+# p1.fullname()
+
+# del p1.myage
+# p1.fullname()
+# -----------------------------------------------------
+# j77     Tamrin
+# class car:
+#     def __init__(self,carname,model,color):
+#         self.carn = carname
+#         self.carmodel = model
+#         self.caecolor = color
+#         self.status = False
+
+
+#     def start(self):
+#         if self.status == False:
+#             self.status=True
+#             print(f"{self.carn} RATATATA from {self.carmodel} with {self.caecolor}")
+#         else:
+#             print("Dont start any more")
+
+
+#     def off(self):
+#         if self.status:
+#             self.status = False
+#             print(f"Car {self.carn} from {self.carmodel} is off now ")
+#         else:
+#             print("Car is off Start first")
+
+
+# c1 = car("BMV",1996,"Black")
+# c2 = car("cls",2025,"white")
+
+# c1.start()
+# c1.start()
+# c1.off()
+# c1.off()
+# ----------------------------------------------------------------------------
+# j78   counting objects
+# class Car:
+#     cars_number = 0
+#     def __init__(self,carname,model,color):
+#         self.carn = carname
+#         self.carmodel = model
+#         self.caecolor = color
+#         self.status = False
+#         Car.cars_number += 1
+
+
+#     def start(self):
+#         if self.status == False:
+#             self.status=True
+#             print(f"{self.carn} RATATATA from {self.carmodel} with {self.caecolor}")
+#         else:
+#             print("Dont start any more")
+
+
+#     def off(self):
+#         if self.status:
+#             self.status = False
+#             print(f"Car {self.carn} from {self.carmodel} is off now ")
+#         else:
+#             print("Car is off Start first")
+
+
+# c1 = Car("BMV",1996,"Black")
+# c2 = Car("Benz",1999,"white")
+# c2 = Car("Dodge",2005,"red")
+
+
+# print(Car.cars_number)
+# -----------------------------------------------------------------
+# j79      change obj value 
+# class Car:
+#     cars_number = 0
+#     def __init__(self,carname,model,color):
+#         self.carn = carname
+#         self.carmodel = model
+#         self.caecolor = color
+#         self.status = False
+#         Car.cars_number += 1
+
+
+#     def start(self):
+#         if self.status == False:
+#             self.status=True
+#             print(f"{self.carn} RATATATA from {self.carmodel} with {self.caecolor}")
+#         else:
+#             print("Dont start any more")
+
+
+#     def off(self):
+#         if self.status:
+#             self.status = False
+#             print(f"Car {self.carn} from {self.carmodel} is off now ")
+#         else:
+#             print("Car is off Start first")
+
+
+# c1 = Car("BMV",1996,"Black")
+# c2 = Car("Benz",1999,"white")
+# c3 = Car("Dodge",2005,"red")
+
+
+# c3.cars_number = 5
+# print(c3.cars_number)
+# print(c1.cars_number)
+# Car.cars_number = 9
+# print(Car.cars_number)
+# print(c1.cars_number)
+# -----------------------------------------------------------------------------
+# j81   inheritance
+# class Person():    #Parent
+#     def __init__(self,fname,lname):
+#         self.fname = fname
+#         self.lname = lname 
+
+#     def printname(self):
+#         print(self.fname,self.lname)
+
+
+# class Student(Person):        #child
+#     pass
+
+# s1=Student("milad","azizi")
+# print(s1.fname,s1.lname)
+
+# s1.printname()
+# -----------------------------------------------------------
+# j82    inheritance2
+# class Person():    #Parent
+#     def __init__(self,fname,lname):
+#         self.fname = fname
+#         self.lname = lname 
+
+
+#     def printname(self):
+#             print(self.fname,self.lname)
+
+
+# p1 = Person("Amir","AMiri")
+
+
+# class Student(Person):        #child
+#     def __init__(self,fname,lname,age):
+#         Person.__init__(self,fname,lname)
+#         self.age = age
+
+# s1 = Student("Amir","Amiri",25)
+# s1.printname()
+# print(s1.age)
+# ----------------------------------------------------
+# j83      python super
+# class Person():    #Parent
+#     def __init__(self,fname,lname):
+#         self.fname = fname
+#         self.lname = lname 
+
+
+#     def printname(self):
+#             print(self.fname,self.lname)
+
+
+# p1 = Person("Amir","AMiri")
+
+
+# class Student(Person):        #child
+#     def __init__(self,fname,lname,age):
+#         # Person.__init__(self,fname,lname)
+#         super().__init__(fname,lname)                                 #namayande class parentt
+#         self.age = age
+
+# s1 = Student("Amir","Amiri",25)
+# s1.printname()
+# print(s1.age)
+# ------------------------------------------------------------------
+# j84     add method to the child class
+# class Person():    #Parent
+#     def __init__(self,fname,lname):
+#         self.fname = fname
+#         self.lname = lname 
+
+
+#     def printname(self):
+#             print(self.fname,self.lname)
+
+
+# p1 = Person("Amir","AMiri")
+
+
+# class Student(Person):        #child
+#     def __init__(self,fname,lname,age):
+#         # Person.__init__(self,fname,lname)
+#         super().__init__(fname,lname)
+#         self.age = age
+
+#     def printage(self):                        #this section
+#          print(f"age is {self.age}")
+
+# s1 = Student("ami","hasani",49)
+
+# s1.printage()
+# -------------------------------------------------------------
+# j85 & 86   Train
+# cs = [
+#     {
+#         "title" : "python",
+#         "teacher" : "amiri"
+#     },
+#     {
+#         "title" : "php",
+#         "teacher" : "hasani"
+#     },
+#     {
+#         "title" : "html",
+#         "teacher" : "vafaii"
+#     }
+# ]
+
+# school = [
+#     {
+#         'name' : 'mofateh',
+#         'admin' : 'Ababsi'
+#     },
+#     {
+#         'name' : 'Taheri',
+#         'admin' : 'Razavi'
+#     },
+#     {
+#         'name' : 'Payambar azam',
+#         'admin' : 'marzzdar'
+#     }
+# ]
+
+# class User:
+#     def __init__(self,fname,lname):
+#         self.fname = fname
+#         self.lname = lname
+
+#     def fullname(self):
+#         print(f"My full name is {self.fname} {self.lname}")
+
+
+# class Student(User):
+#     def __init__(self, fname, lname,email):
+#         super().__init__(fname, lname,)
+#         self.email = email
+#         self.courses = []
+
+
+#     def fullname(self):
+#         print(f"im a student with {self.email}")
+#         super().fullname()
+
+#     def printcourses(self):
+#         if self.courses:
+#             for course in self.courses:
+#                 print(course['title'])
+#         else:
+#                 print("This user has no courses!")
+    
+
+# class Teacher(User):
+#     def __init__(self, fname, lname,id):
+#         super().__init__(fname, lname)
+#         self.id=id
+
+#     def fullname(self):
+#         print(f"Im a teacher with {self.id}")
+#         super().fullname()
+
+
+# class Admin(User):
+#     def __init__(self, fname, lname,school):
+#         super().__init__(fname, lname)
+#         self.school = school
+#         self.school = []
+
+#     def fullname(self):
+#         print(f"IM the admin in {self.school} school")
+
+#     def printschool(self):
+#         if self.school:
+#                 for school in self.school:
+#                     print(school['name'])
+#         else:
+#                 print("This user is not admin!")
+
+
+
+# u1 = User("hossein","mohammadi")
+# s1 = Student("Ali","amiri","mamad@gmail.com")
+# t1 = Teacher("ahmad","ahmadi",2514562)
+# a1 = Admin("reza","rezaii","mofateh")
+
+
+# u1.fullname()
+# s1.fullname()
+# t1.fullname()
+# a1.fullname()
+
+# a1.school.append(school[2])
+# a1.printschool()
+
+# s1.courses.append(cs[1])  
+# s1.printcourses()
+# ---------------------------------------------------------
+# j87      python scope
+# def test():
+#     x=200
+#     def func():
+#         b=700
+
+#         print(b)
+    
+# test()
+
+
+
+# c = 400             #global variable
+
+# def test():
+#     print(c)
+
+# test()
+
+
+# v = 500
+# def test():
+#     v = 911
+#     print(v)
+
+
+# test()
+# print(v)
+
+
+
+
+# def test():
+#     global x
+#     x = 400
+
+# test()
+# print(x)
+# ------------------------------
+# j88   modules      working with files      using another file in our file and code with this commends
+# import mohammadmahdirajabali
+# mymodual.hello("ali")
+# mymodual.sms(10123)
+
+
+# import mohammadmahdirajabali as mmr      #kotah kardan ye esm madual
+# mmr.hello("ali")
+
+# from mohammadmahdirajabali import hello , sms          #using a func or any thingelse directly from another code in our code
+# hello("ali")
+# sms(54545)
+
+
+# from mohammadmahdirajabali import sms,hello,user
+# print(user['name'])
+
+# from mohammadmahdirajabali import *       #import any func or list or dict in another file 
+# hello("ali")
+# sms(45545)
+# print(user['name'])
+# ------------------------------------------------------------------------
+# j88 question 
+# how we can see func or ... in a modual?
+
+# import mohammadmahdirajabali
+# print(dir(mohammadmahdirajabali))
+
+# import mohammadmahdirajabali
+# help(mohammadmahdirajabali)
+# ---------------------------------------------------
+# j89    using default moduals2
+# import platform
+# print (platform.system())
+# print (platform.processor())
+
+
+# import random
+# print(random.randint(10000 , 99999))
+# print(random.randrange(10000 , 99999))
+
+# list = ['amir','reza','milad','mamad']
+# print(random.choice(list))
+
+# from random import randint
+# from random import *
+# --------------------------------------------
+# j90     datetime moduale
+# import datetime
+# x = datetime.datetime.now()
+
+# print(x.year)
+# print(x.month)
+# print(x.day)
+# print(x.minute)
+
+
+# y = datetime.datetime(2025,7,7)
+# print(x.strftime("%a"))           #day
+# print(x.strftime("%A"))
+# print(x.strftime("%b"))           #month
+# --------------------------------------------------
+# j91      timezone
+# from datetime import datetime
+# import pytz
+
+# tz = pytz.timezone("America/Los_Angeles")
+
+# x = datetime.now(tz)
+# print(x)
+# ------------------------------------------------
+# j92     time diffrence **
+# برای اینه ک مثلا تو یه سایت یه نفر یه اشتراک ماهانه میخره و ما میخایم بدونیم زمان پایان اشتراکش دقیقا کی میشه
+
+# from datetime import datetime , timedelta
+
+# start = datetime.now()
+# end = start + timedelta(days = 30)
+
+# print(start)
+# print(end)
+
+# x = end - start
+# print(x.days)                   #day
+# print(x.total_seconds())        #second
+# print(x.total_seconds() / 60)   #minunte
+# ---------------------------------------------------------
+# j93     python math
+# import math
+
+# x = min(5, 10, 25)
+# y = max(5, 10, 25)
+# print(x)
+# print(y)
+
+# x = math.sqrt(64)        #jazr
+# print(x)
+
+
+# x = math.pi
+# print(x)
+
+
+# x = abs(-7.25)      #ghadr motlagh
+# print(x) 
+
+
+# x = pow(4, 3)
+# print(x)
+
+
+# x = math.ceil(1.4)
+# y = math.floor(1.4)
+# print(x) # returns 2
+# print(y) # returns 1
+# -------------------------------------------------
+# j98      json moduls
+import json
+
+x = {
+    "name": "BMV",
+    "Model": 1996,
+    "color": "red",
+    "isAvailable": True,
+    "isCrash": False,
+    "Karkard": None
+}
+
+y = json.loads()
